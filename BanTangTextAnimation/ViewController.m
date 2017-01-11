@@ -41,6 +41,7 @@
   
     
 }
+//点击开始按钮
 - (IBAction)clickBeginAnimationBtn:(UIButton *)sender {
     [self.shapeLayer removeAllAnimations];
     CABasicAnimation *textAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
