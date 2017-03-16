@@ -17,7 +17,7 @@
 @implementation ViewController
 -(NSString *)text {
     if (!_text) {
-        _text = @"我爱北京天安门";
+        _text = @"I'm sorry, many projects have to be, at the end of the year.";
     }
     return _text;
 }
@@ -25,9 +25,9 @@
     if (!_shapeLayer) {
         _shapeLayer = [CAShapeLayer layer];
         [_shapeLayer removeAllAnimations];
-        _shapeLayer.frame = CGRectMake(100, 120, 0, 0);
-        [_shapeLayer setPath:[[self.text bezierPathWithFont:[UIFont systemFontOfSize:40]] CGPath]];
-        [_shapeLayer setStrokeColor:[[UIColor blackColor] CGColor]];
+        _shapeLayer.frame = CGRectMake(10, 120, 0, 0);
+        [_shapeLayer setPath:[[self.text bezierPathWithFont:[UIFont systemFontOfSize:20]] CGPath]];
+        [_shapeLayer setStrokeColor:[[UIColor redColor] CGColor]];
         [_shapeLayer setFillColor:[[UIColor clearColor] CGColor]];
         [_shapeLayer setLineWidth:1];
     }
